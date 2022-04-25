@@ -1,0 +1,141 @@
+*{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color:#111;
+    color:white;
+}
+
+#mainBlock article{
+    display: flex;
+}
+.searchBlock{
+    flex-basis:20%;
+    height:100vh;
+    background-color:#222;
+    padding:20px;
+    box-shadow:1px 1px 1px 1px #ff149338;
+}
+.mainBlock{
+    flex-basis:80%;
+}
+form{
+    width:100%;
+    padding:3px;
+}
+input{
+    width:100%;
+    padding:10px 0;
+    border-radius:3px;
+    border:1px solid #000;
+    background-color:#000;
+    color:#fff;
+    /* text-transform:capitalize; */
+    padding-left:10px;
+}
+#inputSpan{
+    position:relative;
+}
+form>span>svg{
+    position:absolute;
+    top: 33px;
+    left: 223px;
+}
+
+
+figure{
+  padding: 10px;
+  width: 100%;
+}
+
+figure img {
+
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  padding: 0;
+}
+/* /////////////////////////// */
+/* // Animation Spin */
+.spinner {
+    color: rgb(229, 231, 235);
+    height: 50px;
+    width: 50px;
+    fill: #1c64f2;
+}
+
+.animation-spin {
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 1s infinite linear;
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+.container {
+    padding: 10rem 1rem 1rem 1rem;
+    text-align: center;
+}
+
+/* //////////////////////////// */
+
+
+.repo_block {
+  background: #333;
+}
+
+.repo_block img {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.repo_block > div {
+  background: #222;
+  padding: 13px;
+  margin: 12px 7px;
+  border-radius: 2px;
+  border-bottom: 2px solid #444;
+}
+.owner_block {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.owner_block img {
+  margin: 0 3px;
+}
+
+.owner_block h4 {
+  font-size: 13px;
+  color: #999;
+  margin-left: 5px;
+}
+
+.repo_block h2 {
+  text-transform: uppercase;
+  color: yellow;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 14px 0;
+}
+
+.repo_block .footer a {
+  background: #444;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 5px 14px;
+  margin: 10px 9px 10px 0px;
+  display: inline-block;
+  border-bottom: 1px solid yellow;
+}
